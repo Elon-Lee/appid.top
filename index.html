@@ -416,17 +416,6 @@
             faqItem.classList.toggle('active');
         });
     });
-
-    let xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
-    xhr.open('GET', 'https://idshare001.me/node/getid.php?getid=1');
-    xhr.onload = function() {
-        alert(xhr.response)
-        console.log(xhr.response);
-    };
-
-    xhr.send();
-    alert(2)
 </script>
 
 </html>
