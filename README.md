@@ -1,2 +1,0 @@
-# appid.top
-appid.top

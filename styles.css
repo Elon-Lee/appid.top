@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #4285f4;
+    color: white;
+    padding: 10px; /* 调整标题栏的大小 */
+    text-align: center;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 20px; /* 调整标题字体大小 */
+}
+
+.content {
+    padding: 20px;
+}
+
+.data-section {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.data-section h2 {
+    margin-top: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+    background-color: #4285f4;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px; /* 圆角 */
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #3367d6;
+}
+
+.notice {
+    background-color: #4285f4;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 25px; /* 圆角 */
+    font-size: 18px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 50px; /* 增加与数据部分2之间的间隙 */
+}
+
+.info-box {
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 10px; /* 增加格子之间的间隙 */
+}
+
+.info-box p {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.info-box h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.info-box .id-card {
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.info-box .id-card p {
+    margin: 5px 0;
+}
+
+.info-box .id-card .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button-normal {
+    background-color: #4CAF50;
+}
+
+.button-error {
+    background-color: #f44336;
+}
+
+.refresh-button {
+    margin-top: 10px;
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.refresh-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.refresh-button:hover:not(:disabled) {
+    background-color: #FF8C00;
+}
+
+.status-normal {
+    color: #4CAF50;
+}
+
+.status-error {
+    color: #f44336;
+}
+
+.copy-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box {
+        width: 85%; /* 调整为85% */
+        margin: 10px 0; /* 调整竖向排列时的间距 */
+    }
+}
+
+.data-section-2 {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 50px; /* 增加高度 */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.data-section-2 h2 {
+    margin-top: 0;
+}
+
+.faq-container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.faq-header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-item:first-child {
+    border-top: none;
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question::after {
+    content: '▲';
+}
+
+.faq-question::after {
+    content: '▼';
+    font-size: 12px;
+}
+
+.footer {
+    background-color: #4285f4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px; /* 增加与内容的间隙 */
+}
