@@ -43,7 +43,7 @@ body {
     background-color: #4285f4;
     text-align: center;
     text-decoration: none;
-    border-radius: 25px; /* 圆角 */
+    border-radius: 100px; /* 圆角 */
     transition: background-color 0.3s;
 }
 
@@ -130,9 +130,10 @@ body {
     border: none;
     color: white;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s;
+
 }
 
 .refresh-button:disabled {
