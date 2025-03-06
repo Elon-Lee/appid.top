@@ -78,6 +78,16 @@ body {
     margin: 0 10px; /* 增加格子之间的间隙 */
 }
 
+.info-box2 {
+    background-color: white;
+    width: 60%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 10px; /* 增加格子之间的间隙 */
+}
+
 .info-box p {
     margin: 10px 0;
     text-align: left;
