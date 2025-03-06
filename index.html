@@ -55,17 +55,17 @@
             });
             document.querySelector("#refresh-button-1").setAttribute("data-url", jsonUrl1);
             document.querySelector("#refresh-button-2").setAttribute("data-url", jsonUrl2);
-            const _0x4beab4 = ["idshare001.me", "id001.me", "id98.xyz"],
+            const _0x4beab4 = ["share.appid.top"],
                 _0x447b0f = "https://share.appid.top";
-            // function _0x539272() {
-            //   {
-            //     const _0x2c0aee = window.location.hostname;
-            //     !_0x4beab4.includes(_0x2c0aee) && setTimeout(() => {
-            //       window.location.href = _0x447b0f;
-            //     }, 3000);
-            //   }
-            // }
-            // _0x539272();
+            function _0x539272() {
+              {
+                const _0x2c0aee = window.location.hostname;
+                !_0x4beab4.includes(_0x2c0aee) && setTimeout(() => {
+                  window.location.href = _0x447b0f;
+                }, 3000);
+              }
+            }
+            _0x539272();
             fetch(jsonUrl1).then(_0x2057e7 => _0x2057e7.json()).then(_0x860193 => {
                 const _0x27d78b = _0x860193[0];
                 updateIDCard(_0x27d78b, "id-status", "id-country", "id-time", "copy-username", "copy-password");
@@ -165,10 +165,11 @@
 
     </div>
     <div class="content">
-        <a class="web-Url button" style="margin-left: 5px" href="https://share.appid.top/" target="_blank">果叔免费共享</a>
-        <a class="group-Url button"  style="margin-left: 5px" href="https://t.me/appleid" target="_blank">TG交流群</a>
-        <a class="shop-Url button" style="margin-left: 5px"  href="https://appid.top/" target="_blank">海外账号商城</a>
-        <a class="back-Url button" style="margin-left: 5px"  href="https://gososhop.cc/" target="_blank">备用地址</a>
+        <a class="web-Url button" style="margin-left: 5px" href="https://share.appid.top/"
+           target="_blank">果叔免费共享</a>
+        <a class="group-Url button" style="margin-left: 5px" href="https://t.me/appleid" target="_blank">TG交流群</a>
+        <a class="shop-Url button" style="margin-left: 5px" href="https://appid.top/" target="_blank">海外账号商城</a>
+        <a class="back-Url button" style="margin-left: 5px" href="https://gososhop.cc/" target="_blank">备用地址</a>
 
         <div class="info-container">
             <div class="info-box">
@@ -199,7 +200,8 @@
                             onclick="refreshIDCard('id-status', 'id-country', 'id-time', 'copy-username', 'copy-password', this)"
                             class="refresh-button " data-url="/node/getid.php?getid=1">刷新
                     </button>
-                    <a class="button button-blue shop-Url" href="https://appid.top/" target="_blank">点击租赁或购买独享ID</a>
+                    <a class="button button-blue shop-Url" href="https://appid.top/"
+                       target="_blank">点击租赁或购买独享ID</a>
                 </div>
                 <div class="id-card">
                     <p id="id2-status" class="status-normal">解锁成功</p>
@@ -217,7 +219,8 @@
                             onclick="refreshIDCard('id2-status', 'id2-country', 'id2-time', 'copy2-username', 'copy2-password', this)"
                             class="refresh-button" data-url="/node/getid.php?getid=2">刷新
                     </button>
-                    <a class="button button-blue shop-Url" href="https://appid.top/" target="_blank">点击租赁或购买独享ID</a>
+                    <a class="button button-blue shop-Url" href="https://appid.top/"
+                       target="_blank">点击租赁或购买独享ID</a>
                 </div>
             </div>
             <div class="info-box">
@@ -330,8 +333,10 @@
         <div class="container section">
             <div class="section-title">使用教程</div>
             <div class="section-content">
-                <p>1. 在 iPhone 或 iPad 主屏幕上找到「App Store」软件打开，点击右上角「头像图标」，下滑到底部，点击「退出登录」现有账号。</p>
-                <p>2. 输入购买收到的账号，点击「登录」。如果出现「Apple ID 安全」提示，点击下方的「其他选项」，点击「不升级」继续登录。</p>
+                <p>1. 在 iPhone 或 iPad 主屏幕上找到「App
+                    Store」软件打开，点击右上角「头像图标」，下滑到底部，点击「退出登录」现有账号。</p>
+                <p>2. 输入购买收到的账号，点击「登录」。如果出现「Apple ID
+                    安全」提示，点击下方的「其他选项」，点击「不升级」继续登录。</p>
                 <div class="msg_desc">
                     <img style="max-width:100%;overflow:hidden;" src="./yw9xwa-0.jpg" alt="图片教程">
                 </div>
@@ -353,7 +358,9 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">共享账号可以在设置中登录吗？</div>
-                <div class="faq-answer">不可以。切记，错误登录会导致账号被锁或者隐私暴露。如果不幸被锁，请第一时间联系我们的客服，我们会提供解锁服务，不收费！</div>
+                <div class="faq-answer">
+                    不可以。切记，错误登录会导致账号被锁或者隐私暴露。如果不幸被锁，请第一时间联系我们的客服，我们会提供解锁服务，不收费！
+                </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">更新App时提示禁用！</div>
@@ -385,7 +392,7 @@
 
         // 插入日期到标题中
         document.getElementById('page-title').innerText = webname + ' - 最新免费共享账号' + ` ${getCurrentDate()}  `;
-        document.getElementById('time').innerText = webname +  ' - 免费共享账号 - ' +` ${getCurrentDate()}  ` ;
+        document.getElementById('time').innerText = webname + ' - 免费共享账号 - ' + ` ${getCurrentDate()}  `;
         // 插入年份到页脚中
         document.getElementById('footer').innerText = `© ` + webname + ` 版权所有 ${getCurrentYear()}`;
 
