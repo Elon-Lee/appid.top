@@ -63,7 +63,7 @@ body {
 
 .info-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px; /* 增加与数据部分2之间的间隙 */
 }
@@ -80,7 +80,6 @@ body {
 
 .info-box2 {
     background-color: lightyellow;
-    width: 60%;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
